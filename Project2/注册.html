@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Oink Princess new account</title>
+<script>
+    function checkForm() {
+        //alert("aa");
+        /**校验用户名*/
+            //1.获取用户输入的数据
+        var uValue = document.getElementById("user").value;
+        //alert(uValue);
+        if (uValue == "") {
+            //2.给出错误提示信息
+            alert("用户名不能为空!");
+            return false;
+        } else if (document.myForm.user.value.length < 5 || document.myForm.user.value.length > 20) {
+            window.alert("用户名长度必须介于5-20个字符之间！");
+            return false;
+        }
+
+
+        /*校验密码*/
+        var pValue = document.getElementById("password").value;
+        if (pValue == "") {
+            alert("密码不能为空!");
+            return false;
+        } else if (document.myForm.password.value.length < 5) {
+            window.alert("密码太短");
+            return false;
+        }
+    }
+    </script>
+
+</head>
+<body background="../images/o.jfif "
+      style=" background-repeat:no-repeat ;
+background-size:100% 100%;
+background-attachment: fixed;">
+<div class="apply">
+    <p><strong>注册</strong></p>
+</div>
+<link rel="stylesheet" type="text/css" href="注册.css">
+
+<form action="注册.php" method="POST" class="user" name="myForm" onsubmit="return checkForm()">
+    <table border="1px" width="750px" height="400px" align="center"  bgcolor="transparent">
+
+        <tr>
+            <td>
+                用户名
+            </td>
+            <td>
+                <input type="text" name="name" size="34px" id="user"  placeholder="[请输入用户名]">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                密码
+            </td>
+            <td>
+                <input type="password" name="password" size="34px" id="password"  placeholder="[请输入密码]">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                确认密码
+            </td>
+            <td>
+                <input type="password" name="repassword" size="34px" id="repassword" placeholder="[请确认密码]">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Email
+            </td>
+            <td>
+                <input type="text" name="email" size="34px" id="email" placeholder="[请输入邮箱]">
+            </td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <input type="submit" value="注册" class="button">
+            </td>
+        </tr>
+    </table>
+</form>
+<div id="foot">
+    <ul>
+        <li> <a>猪圈公主</a></li>
+        <li><a>19302010062</a></li>
+        <li><a>良心制作</a></li>
+        <li><a>点开这个网页即可收获一份快乐！</a></li>
+        <img src="../images/猪.png" class="scan" width="60" height="55">
+        <img src="../images/猪.png" class="scan" width="60" height="55">
+        <img src="../images/猪.png" class="scan" width="60" height="55">
+
+    </ul>
+</div>
+
+</body>
+</html>

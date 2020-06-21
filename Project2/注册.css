@@ -1,0 +1,75 @@
+.apply {
+    text-align: center;
+    font-size: 36px;
+    color: #4c7391;
+}
+
+div{
+    margin: 0 auto;
+}
+
+.button {
+    background-color: #4a6a68;
+    border: none;
+    color: #f4f4f4;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: 330px;
+    cursor: pointer;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0 9px #999;
+}
+.button:hover {background-color: #072031
+}
+
+.button:active {
+    background-color: #072031;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+
+
+#foot {
+    margin-top: 330px;
+    margin-left: 0;
+    height: 50px;
+    background-color: #030e11;
+}
+#foot li{
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position:relative;
+    border:none;
+}
+#foot li a {
+    font-size:20px; color: #ffffff;
+    display:block;
+    outline:0;
+    text-decoration:none;
+}
+#foot li:hover a {
+    color: #b2bc81;
+}
+.scan {
+    animation: myfirst 20s;
+    -webkit-animation: myfirst 20s;
+    position: relative;
+}
+@-webkit-keyframes myfirst
+{
+    0%   { left:0px; top:0px;}
+    25%  { left:160px; top:0px;}
+    50%  { left:330px; top:0px;}
+    75%  { left:460px; top:0px;}
+    100% { left:660px; top:0px;}
+}

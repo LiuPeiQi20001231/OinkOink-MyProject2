@@ -1,0 +1,222 @@
+
+li{
+    list-style-type: none;
+}
+#menu {
+    margin: 0px;
+    height: 50px;
+    background-color: #030e11;
+}
+.pic{
+    float: left;
+}
+#menu li{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position:relative;
+    border:none;
+}
+#menu li a {
+    font-size:20px; color: white;
+    display:block;
+    outline:0;
+    text-decoration:none;
+}
+#menu li:hover a {
+    color: #b2bc81;
+}
+#menu li:hover .dropdown_1column {
+    left:0px;
+    top:50px;
+}
+.search{
+    background-color: #4a6a68;
+}
+.dropdown_1column{
+    margin: 0px ;
+    float: left;
+    position: absolute;
+    left: -999em;
+    text-align: left;
+    border: none;
+    background: white;
+    width: 140px;
+}
+#menu li:hover div a{
+    font-size:16px
+;color: #030002;
+}
+
+#menu li:hover div a:hover{
+    color: #4c7391;
+    font-weight: bolder;
+}
+
+#menu li ul {
+    list-style:none;
+    padding:10px 5px;
+    margin:0;
+}
+#menu li ul li {
+    font-size:12px;
+    line-height:26px;
+    position:relative;
+    padding:0;margin:0;
+    float:none;
+    text-align:left;
+    width:130px;
+}
+#menu li ul li:hover {
+    padding:0;
+    margin:0;
+}
+.searchfilter{
+    margin-left: 0;
+    margin-top: 2%;
+    border:2px solid #204338;
+
+}
+
+input[type="radio"]  {
+    width: 3em;
+}
+input{
+    margin-left: 0px;
+    width: 80%;
+    background-color: #ffffff;
+    border: #072031 solid 1px;
+    border-radius: 3px;
+    color: #040404;
+
+    font-size: 20px;
+}
+input[type="submit"] {
+    background-color: #ffffff;
+    border: #040404 solid 1px;
+    width: 3em;
+    height: 2em;
+
+    margin: auto;
+}
+input[type="radio"] input[type="submit"]:hover {
+    cursor: pointer;
+}
+.result{
+    border:2px solid #204338;
+    margin-left: 0;
+    margin-top: 15px;
+    width: 100%;
+    height:50%;
+    overflow: hidden;
+}
+.result div{
+    margin-top: 5px;
+}
+.photo{
+    width: 20%;
+    float: left;
+}
+
+.description{
+    float:right;
+    width: 100%;
+}
+.description h3{
+    font-size: 20px;
+    color: #3d3b5a;
+    text-align: left;
+}
+.description h1{
+    text-align: center;
+    font-size: 40px;
+    color: #3d3b5a;
+}
+.result p{
+
+    width:100%;
+
+    display: -webkit-box;  /*  display: -webkit-box; 必须结合的属性 ，将对象作为弹性伸缩盒子模型显示  */
+    -webkit-box-orient: vertical; /*  -webkit-box-orient 必须结合的属性 ，设置或检索伸缩盒对象的子元素的排列方式  */
+    -webkit-line-clamp: 3; /*  -webkit-line-clamp用来限制在一个块元素显示的文本的行数 */
+    overflow: hidden;
+}
+#foot {
+    margin-top: 50px;
+    margin-left: 0;
+    height: 50px;
+    background-color: #030e11;
+}
+#foot li{
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    position:relative;
+    border:none;
+}
+#foot li a {
+    font-size:20px; color: #ffffff;
+    display:block;
+    outline:0;
+    text-decoration:none;
+}
+#foot li:hover a {
+    color: #b2bc81;
+}
+.scan {
+    animation: myfirst 20s;
+    -webkit-animation: myfirst 20s;
+    position: relative;
+}
+@-webkit-keyframes myfirst
+{
+    0%   { left:0px; top:0px;}
+    25%  { left:160px; top:0px;}
+    50%  { left:330px; top:0px;}
+    75%  { left:460px; top:0px;}
+    100% { left:660px; top:0px;}
+}\.page{
+     margin-top: 20px;
+     margin-left: -15px;
+     clear: both;
+ }
+.page a:hover{
+    color: olive;
+}
+#current{
+    color: #1b6d85;
+}
+#current:hover{
+    color: olive;
+}
+.page div:hover{
+    color: olive;
+}
+ul.page {
+    display: inline-block;
+}
+
+ul.page li {display: inline;}
+
+ul.page a {
+    color: #0b4538;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+ul.page li a.active {
+    background-color: #91001b;
+    color: white;
+}
+
+ul.page li a:hover:not(.active) {background-color: #ddd;}
+li{
+    list-style-type: none;
+}
